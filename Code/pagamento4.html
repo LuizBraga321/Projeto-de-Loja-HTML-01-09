@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
+
 <head>
-    
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,52 +39,61 @@
     </ul>
 
     <p>Escolha a forma de pagamento que melhor se adequa às suas necessidades e aproveite nossas ofertas!</p>
-    
+
     <hr>
 
     <details>
 
         <summary> Cartão de Débito ou Crédito </summary>
 
-        <p>
+        <form>
 
-            <label for="nome-cartao"> Nome do cartão </label>
+            <p>
+                <label for="nome-cartao"> Nome do cartão </label>
+
+                <br>
+
+                <input type="text" id="nome-cartao">
+
+            </p>
+
+            <p>
+
+                <label for="número-cartão"> Número do cartão </label>
+
+                <br>
+
+                <input type="number" id="número-cartão">
+
+            </p>
+
+            <p>
+
+                <label for="data-validade"> Data de Validade </label>
+
+                <br>
+
+                <input type="number" id="data-validade">
+
+            </p>
+
+            <p>
+
+                <label for="cvc"> CVC </label>
+
+                <br>
+
+                <input type="number" id="cvc">
+
+            </p>
 
             <br>
 
-            <input id="nome-cartao">
+            <button type="submit"> Finalizar Pagamento </button>
 
-        </p>
+            <hr>
 
-        <p>
-
-            <label for="número-cartão"> Número do cartão </label>
-
-            <br>
-
-            <input id="número-cartão">
-
-        </p>
-
-        <p>
-
-            <label for="data-validade"> Data de Validade </label>
-
-            <br>
-
-            <input id="data-validade">
-
-        </p>
-
-        <p>
-
-            <label for="cvc"> CVC </label>
-
-            <br>
-
-            <input id="cvc">
-
-        </p>
+        </form>
 
     </details>
 
@@ -92,55 +101,65 @@
 
         <summary> Boleto Bancário </summary>
 
-        <p>
+        <form>
 
-            <label for="Nome"> Nome Completo </label>
+            <p>
+
+                <label for="Nome"> Nome Completo </label>
+
+                <br>
+
+                <input type="text" id="Nome">
+
+            </p>
+
+            <p>
+
+                <label for="cpf-boleto"> CPF </label>
+
+                <br>
+
+                <input type="number" id="cpf-boleto">
+
+            </p>
+
+            <p>
+
+                <label for="address"> Endereço </label>
+
+                <br>
+
+                <input type="text" id="address">
+
+            </p>
+
+            <p>
+
+                <label for="number"> Número de Telefone </label>
+
+                <br>
+
+                <input type="tel" id="number">
+
+            </p>
+
+            <p>
+
+                <label for="email"> E-mail </label>
+
+                <br>
+
+                <input type="email" id="email">
+
+            </p>
 
             <br>
 
-            <input id="Nome">
+            <button type="submit"> Finalizar Pagamento</button>
 
-        </p>
+            <hr>
 
-        <p>
-
-            <label for="cpf"> CPF </label>
-
-            <br>
-
-            <input id="cpf">
-
-        </p>
-
-        <p>
-
-            <label for="address"> Endereço </label>
-
-            <br>
-
-            <input id="address">
-
-        </p>
-
-        <p>
-
-            <label for="number"> Número de Telefone </label>
-
-            <br>
-
-            <input id="number">
-
-        </p>
-
-        <p>
-
-            <label for="email"> E-mail </label>
-
-            <br>
-
-            <input id="email">
-
-        </p>
+        </form>
 
     </details>
 
@@ -148,15 +167,25 @@
 
         <summary> Pix </summary>
 
-        <p>
+        <form>
 
-            <label for="qualquer"> Número, CPF/CNPJ, E-mail</label>
+            <p>
+
+                <label for="qualquer"> Número, CPF/CNPJ, E-mail</label>
+
+                <br>
+
+                <input id="qualquer">
+
+            </p>
 
             <br>
 
-            <input id="qualquer">
+            <button type="submit"> Finalizar Pagamento</button>
 
-        </p>
+            <hr>
+
+        </form>
 
     </details>
 
@@ -164,70 +193,78 @@
 
         <summary> Transferência Bancária </summary>
 
-        <p>
+        <form>
 
-            <label for="nome"> Nome Completo </label>
+            <p>
+
+                <label for="nome"> Nome Completo </label>
+
+                <br>
+
+                <input type="text" id="nome">
+
+            </p>
+
+            <p>
+
+                <label for="cpf"> CPF/CNPJ </label>
+
+                <br>
+
+                <input type="number" id="cpf">
+
+            </p>
+
+            <p>
+
+                <label for="banco"> Banco </label>
+
+                <br>
+
+                <input type="text" id="banco">
+
+            </p>
+
+            <p>
+
+                <label for="numero-conta"> Número da conta </label>
+
+                <br>
+
+                <input type="number" id="numero-conta">
+
+            </p>
+
+            <p>
+
+                <label for="agencia"> Agência </label>
+
+                <br>
+
+                <input type="number" id="agencia">
+
+            </p>
+
+            <p>
+
+                <label for="tipo-de-conta"> Tipo de Conta </label>
+
+                <br>
+
+                <input type="text" id="tipo-de-conta">
+
+            </p>
 
             <br>
 
-            <input id="nome">
+            <button type="submit"> Finalizar Pagamento</button>
 
-        </p>
-
-        <p>
-
-            <label for="cpf"> CPF/CNPJ </label>
-
-            <br>
-
-            <input id="cpf">
-
-        </p>
-
-        <p>
-
-            <label for="banco"> Banco </label>
-
-            <br>
-
-            <input id="banco">
-
-        </p>
-
-        <p>
-
-            <label for="numero-conta"> Número da conta </label>
-
-            <br>
-
-            <input id="numero-conta">
-
-        </p>
-
-        <p>
-
-            <label for="agencia"> Agência </label>
-
-            <br>
-
-            <input id="agencia">
-
-        </p>
-
-        <p>
-
-            <label for="tipo-de-conta"> Tipo de Conta </label>
-
-            <br>
-
-            <input id="tipo-de-conta">
-
-        </p>
+        </form>
 
     </details>
 
     <hr>
-    
+
     <footer>
 
         <a href="Produtos1.html"> Produtos </a> |
@@ -238,4 +275,5 @@
     </footer>
 
 </body>
+
 </html>
